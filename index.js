@@ -15,6 +15,9 @@
  var handlers = require('./lib/handlers');
  var helpers = require('./lib/helpers');
  
+ helpers.sendTwilioSms('9041475887','Hello', function(err){
+    console.log(err);
+ });
 
 
  //The server should respond to all requests with a string
