@@ -6,3 +6,6 @@
 
 .data/users/*
 !.data/users/.gitkeep
+
+.logs/*
+!.logs/.gitkeep
