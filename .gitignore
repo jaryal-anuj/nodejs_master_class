@@ -1,1 +1,8 @@
-.data
+.data/checks/*
+!.data/checks/.gitkeep
+
+.data/tokens/*
+!.data/tokens/.gitkeep
+
+.data/users/*
+!.data/users/.gitkeep
