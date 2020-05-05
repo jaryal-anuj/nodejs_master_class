@@ -1,33 +1,11 @@
 
-var helpers = require('./../lib/helpers');
-var assert = require('assert');
+
 
 _app = {};
 
-_app.tests = {
-    'unit':{}
-};
+_app.tests = {};
 
-// assrt that the getANumber function is returning a number
-_app.tests.unit['helpers.getANumber should return number']= function(done){
-    var val = helpers.getANumber();
-    assert.equal(typeof(val),'number');
-    done();
-};
-
-// assrt that the getANumber function is returning a 1
-_app.tests.unit['helpers.getANumber should return 1']= function(done){
-    var val = helpers.getANumber();
-    assert.equal(val,1);
-    done();
-};
-
-// assrt that the getANumber function is returning a 2
-_app.tests.unit['helpers.getANumber should return 2']= function(done){
-    var val = helpers.getANumber();
-    assert.equal(val,2);
-    done();
-};
+_app.tests.unit = require('./unit');
 
 _app.countTests = function(){
     var counter =0;
