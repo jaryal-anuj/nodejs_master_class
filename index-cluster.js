@@ -4,6 +4,7 @@ var cli = require('./lib/cli');
 var cluster = require('cluster');
 var os = require('os');
 
+
 var app={};
 
 app.init = function(callback){
